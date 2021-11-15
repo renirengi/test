@@ -1,0 +1,39 @@
+body{
+    background-color:black;
+    min-width: 320px;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-blend-mode: multiply;
+    font-family: var(--Gilroy);
+    font-size: 14px;
+}
+
+header,
+  main,
+  footer{
+  width:90%;
+  margin: 0 auto;
+}
+
+header{
+  height:10vh;
+  width:90%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main{
+    height: 80vh;
+}
+
+footer{
+position: relative;
+display: flex;
+justify-content: space-between;
+height: 10vh;
+color:white;
+}
+

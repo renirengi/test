@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/settings.component.css" />
+</head>
+<body>
+    <header>
+        <a class="back logo" href="/index.html" target="_self"></a>
+         <h3>Settings</h3>
+         <a class="settings logo"></a>
+       </header>
+       <main>
+     <form>  
+         <div class="language container">
+             <p class="title">Language</p>
+             <label class="radio-container">English
+                 <input type="radio" checked="checked" name="language" value="eng">
+                 <span class="checkmark"></span>
+             </label>
+             <label class="radio-container">Русский
+                 <input type="radio" name="language" value="rus">
+                 <span class="checkmark"></span>
+             </label>
+         </div>
+         <div class="volume container">
+             <p class="title">Volume</p>
+             <button class="mute false logo" type="button"></button>
+             <input type="range" min="0" max="100" value="50" step="1" class="range" id="volume" />
+             <button class="mute true logo" type="button"></button>
+         </div>
+         <div class="timer container">
+             <p class="title">Time game</p>
+             <button class="on btn bigBtn" value="off">Off</button>
+             <button class="off btn bigBtn" value="on">On</button>
+         </div>
+         <div class="button-group container hiddenContent showIt ">
+             <p class="title">Time to answer</p>
+             <div class="timer-button">
+                 <button type="button" class="btn" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.dispatchEvent(new Event('change'))">-</button>
+                 <input type="number" name="time" min="5" max="30" value="0" step="5" readonly class="number">
+                 <button type="button" class="btn" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.dispatchEvent(new Event('change'))">+</button>
+               </div>
+         </div>
+         <div class="container">
+             <button class="default btn bigBtn">Default</button>
+             <button class="save btn bigBtn">Save</button>
+         </div>
+         </form>
+         </main>
+         
+       <footer>
+         <div class="home logo"></div>
+         <div class="school_logo"></div>
+         <div class="honor logo"></div>
+        </footer>
+        <script type="module" src="./js/index.js"></script>
+</body>
+</html>

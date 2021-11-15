@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('/assets/fonts/JosefinSans-VariableFont_wght.ttf');
+  }
+
+@import 'setting.component.css';
+  :root {
+    --font-gold: #9d8665;
+    --font-peach: #FFBCA2;
+    --JosefinSans: 'JosefinSans', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+    body{
+    background: url('../assets/img/fon.jpg') no-repeat;
+    background-size: cover; 
+    background-blend-mode: multiply; 
+    min-width: 320px;
+    max-height:100vh;
+    z-index:-100;
+    text-align: center;
+    font-family: var(--JosefinSans);
+    font-size: 4vh;
+  }
+  
+    header,
+    main,
+    footer{
+    width:90%;
+    margin: 0 auto;
+  }
+  
+  /*Header*/
+  header{
+    height:10vh;
+    width: 90%;
+    display: inline-block;
+  }
+  
+   header a{
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width:40px;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  header a:hover{
+    opacity: 1;
+    -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
+  }
+
+  header a:active {
+    border: 0;
+    outline: 0;
+    transform: scale(1.1);
+    }
+
+    .honor{
+        background-image: url("/assets/svg/cil_star.svg");
+        position: absolute;
+        left:5%;
+        top: 2.5%;
+    }
+
+    .settings{
+        background-image: url("/assets/svg/settings.svg");
+        position: absolute;
+        right:5%;
+        top: 2.5%;
+    }
+  
+  /*Main*/
+    main{
+      height: 80vh;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .app_logo{
+      margin-top: 30vh;
+      height: 10vh;
+    }
+
+    .button{
+        width:55%;
+        margin-top: 5vh;
+        margin-right: auto;
+        margin-left:auto;
+        padding-top: auto;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    
+    .button-quiz{    
+        background-color: transparent;
+        height: 10vh;
+        border: 2px solid white;
+        color:white;
+        font-size: 5vh; 
+        margin-bottom: 5%; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+    .button-quiz:hover{
+        opacity: 1;
+        background-color: var(--font-gold);
+    }
+
+    .button-quiz:active{
+      outline: 0;
+      transform: scale(1.1);
+    }
+                  
+  /*Footer*/     
+    footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    color:white;
+  }
+  
+  .school_logo img{
+    height: 30px;
+  }
+  
+  

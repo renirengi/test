@@ -1,0 +1,169 @@
+body{
+    background-color:black;
+    background-size: cover; 
+    background-blend-mode: multiply; 
+    min-width: 320px;
+    min-height:100vh;
+    z-index:-100;
+    text-align: center;
+    font-family: var(--Gilroy);
+    font-size: 4vh;
+    color:aliceblue;
+  }
+  
+    header,
+    main,
+    footer{
+    width:90%;
+    margin: 0 auto;
+  }
+  
+  header{
+    height:10vh;
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  
+  .settings_logo,
+  .honor_logo,
+  .school_logo,
+  .home_logo,
+  .peach_logo{
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width:31px;
+    height: 31px;
+    border: 0;
+    outline: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+
+
+  .settings_logo,
+  .honor_logo,
+  .school_logo,
+  .home_logo,
+  .peach_logo:hover{
+    opacity: 1;
+    }
+  
+  .settings_logo,
+  .honor_logo,
+  .school_logo,
+  .home_logo,
+  .peach_logo:active{
+    border: 0;
+    outline: 0;
+    transform: scale(1.3);
+  }
+
+  .honor_logo{
+    background: url('../assets/svg/honor.svg');
+  }
+
+  .home_logo{
+      background: url('../assets/svg/home_logo.svg');
+  }
+
+  .peach_logo{
+    background: url('../assets/svg/logo_peach.svg');
+    
+  }
+
+  .school_logo{
+    background: url('../assets/svg/school_logo.svg');
+    width:61px;
+    height: 31px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .settings_logo{
+    background: url('../assets/svg/setting.svg');
+   
+  }
+
+    
+  h2{
+      text-transform: uppercase;
+      justify-content: start;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+
+  span{
+    color:aliceblue;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 36%;
+    text-decoration: none;
+    color: black;
+    margin: 2vh;
+  }
+  
+  .card img {
+    object-fit: fill;
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    ;
+    -moz-transition: all 0.3s ease;
+    ;
+    -o-transition: all 0.3s ease;
+    ;
+    transition: all 0.3s ease;
+  }
+
+  .card img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  h2{
+      font-size: 6vh;
+  }
+
+  footer{
+      position: sticky;
+      display: flex;
+      align-items: center;
+      height: 10vh;
+      justify-content: space-between;
+      border: 1px solid white;
+  }
+

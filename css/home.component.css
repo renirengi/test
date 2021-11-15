@@ -1,0 +1,35 @@
+.home.body{
+    background: url('../assets/img/fon.jpg') no-repeat;
+    background-size: cover; 
+    background-blend-mode: multiply; 
+}
+
+.home main{
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.home main.button a{
+    width: 50%;
+    height: 7vh;
+    margin-top: 60vh;
+    margin-right: auto;
+    margin-left:auto;
+    padding-top: auto;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 45%;
+    color:white;
+    font-size: 15px;   
+}
+
+.home main.button a:hover{
+opacity: 1;
+background-color: var(--font-gold);
+}
+              
+.home main.button a:active {
+outline: 0;
+transform: scale(1.1);
+}
